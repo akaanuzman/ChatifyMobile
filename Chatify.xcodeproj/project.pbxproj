@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F12D5D582B9108EB00968BFE /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D5D572B9108EB00968BFE /* LoginVC.swift */; };
+		F12D5D5B2B910ABC00968BFE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F12D5D5A2B910ABC00968BFE /* SnapKit */; };
+		F12D5D5D2B910ABC00968BFE /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F12D5D5C2B910ABC00968BFE /* SnapKit-Dynamic */; };
+		F12D5D602B910B3C00968BFE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F12D5D5F2B910B3C00968BFE /* Lottie */; };
 		F1E80E872B91039C00EB8675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E80E862B91039C00EB8675 /* AppDelegate.swift */; };
-		F1E80E8B2B91039C00EB8675 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E80E8A2B91039C00EB8675 /* ViewController.swift */; };
 		F1E80E902B91039D00EB8675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E80E8F2B91039D00EB8675 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F12D5D572B9108EB00968BFE /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F1E80E832B91039C00EB8675 /* Chatify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E80E862B91039C00EB8675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F1E80E8A2B91039C00EB8675 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F1E80E8F2B91039D00EB8675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1E80E942B91039D00EB8675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -25,12 +28,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F12D5D5B2B910ABC00968BFE /* SnapKit in Frameworks */,
+				F12D5D5D2B910ABC00968BFE /* SnapKit-Dynamic in Frameworks */,
+				F12D5D602B910B3C00968BFE /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F12D5D552B9108D400968BFE /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				F12D5D562B9108D800968BFE /* Auth */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		F12D5D562B9108D800968BFE /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F12D5D572B9108EB00968BFE /* LoginVC.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		F1E80E7A2B91039C00EB8675 = {
 			isa = PBXGroup;
 			children = (
@@ -50,8 +72,8 @@
 		F1E80E852B91039C00EB8675 /* Chatify */ = {
 			isa = PBXGroup;
 			children = (
+				F12D5D552B9108D400968BFE /* Feature */,
 				F1E80E862B91039C00EB8675 /* AppDelegate.swift */,
-				F1E80E8A2B91039C00EB8675 /* ViewController.swift */,
 				F1E80E8F2B91039D00EB8675 /* Assets.xcassets */,
 				F1E80E942B91039D00EB8675 /* Info.plist */,
 			);
@@ -74,6 +96,11 @@
 			dependencies = (
 			);
 			name = Chatify;
+			packageProductDependencies = (
+				F12D5D5A2B910ABC00968BFE /* SnapKit */,
+				F12D5D5C2B910ABC00968BFE /* SnapKit-Dynamic */,
+				F12D5D5F2B910B3C00968BFE /* Lottie */,
+			);
 			productName = Chatify;
 			productReference = F1E80E832B91039C00EB8675 /* Chatify.app */;
 			productType = "com.apple.product-type.application";
@@ -102,6 +129,10 @@
 				Base,
 			);
 			mainGroup = F1E80E7A2B91039C00EB8675;
+			packageReferences = (
+				F12D5D592B910ABC00968BFE /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F12D5D5E2B910B3C00968BFE /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = F1E80E842B91039C00EB8675 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,8 +158,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1E80E8B2B91039C00EB8675 /* ViewController.swift in Sources */,
 				F1E80E872B91039C00EB8675 /* AppDelegate.swift in Sources */,
+				F12D5D582B9108EB00968BFE /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +365,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F12D5D592B910ABC00968BFE /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		F12D5D5E2B910B3C00968BFE /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F12D5D5A2B910ABC00968BFE /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F12D5D592B910ABC00968BFE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		F12D5D5C2B910ABC00968BFE /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F12D5D592B910ABC00968BFE /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		F12D5D5F2B910B3C00968BFE /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F12D5D5E2B910B3C00968BFE /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F1E80E7B2B91039C00EB8675 /* Project object */;
 }
