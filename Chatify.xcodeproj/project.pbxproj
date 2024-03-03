@@ -11,12 +11,26 @@
 		F12D5D5B2B910ABC00968BFE /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F12D5D5A2B910ABC00968BFE /* SnapKit */; };
 		F12D5D5D2B910ABC00968BFE /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F12D5D5C2B910ABC00968BFE /* SnapKit-Dynamic */; };
 		F12D5D602B910B3C00968BFE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F12D5D5F2B910B3C00968BFE /* Lottie */; };
+		F12D5D642B911D2900968BFE /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = F12D5D632B911D2900968BFE /* login.json */; };
+		F12D5D6E2B911F2F00968BFE /* Lotties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D5D6D2B911F2F00968BFE /* Lotties.swift */; };
+		F12D5D702B911FF000968BFE /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D5D6F2B911FF000968BFE /* Texts.swift */; };
+		F12D5D732B91221F00968BFE /* LoginFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12D5D722B91221F00968BFE /* LoginFieldsView.swift */; };
+		F13FFE7B2B95011F00C8337B /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FFE7A2B95011F00C8337B /* SFSymbols.swift */; };
+		F13FFE812B95051D00C8337B /* LeftIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FFE802B95051D00C8337B /* LeftIconView.swift */; };
+		F13FFE852B9509B800C8337B /* ChatifyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FFE842B9509B800C8337B /* ChatifyButton.swift */; };
 		F1E80E872B91039C00EB8675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E80E862B91039C00EB8675 /* AppDelegate.swift */; };
 		F1E80E902B91039D00EB8675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E80E8F2B91039D00EB8675 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F12D5D572B9108EB00968BFE /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		F12D5D632B911D2900968BFE /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
+		F12D5D6D2B911F2F00968BFE /* Lotties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lotties.swift; sourceTree = "<group>"; };
+		F12D5D6F2B911FF000968BFE /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+		F12D5D722B91221F00968BFE /* LoginFieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFieldsView.swift; sourceTree = "<group>"; };
+		F13FFE7A2B95011F00C8337B /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
+		F13FFE802B95051D00C8337B /* LeftIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftIconView.swift; sourceTree = "<group>"; };
+		F13FFE842B9509B800C8337B /* ChatifyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatifyButton.swift; sourceTree = "<group>"; };
 		F1E80E832B91039C00EB8675 /* Chatify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E80E862B91039C00EB8675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E80E8F2B91039D00EB8675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,9 +62,88 @@
 		F12D5D562B9108D800968BFE /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				F12D5D572B9108EB00968BFE /* LoginVC.swift */,
+				F12D5D712B91220900968BFE /* Login */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		F12D5D652B911E8A00968BFE /* Lotties */ = {
+			isa = PBXGroup;
+			children = (
+				F12D5D632B911D2900968BFE /* login.json */,
+			);
+			name = Lotties;
+			sourceTree = "<group>";
+		};
+		F12D5D662B911EA700968BFE /* Supports */ = {
+			isa = PBXGroup;
+			children = (
+				F1E80E862B91039C00EB8675 /* AppDelegate.swift */,
+				F1E80E8F2B91039D00EB8675 /* Assets.xcassets */,
+				F1E80E942B91039D00EB8675 /* Info.plist */,
+			);
+			name = Supports;
+			sourceTree = "<group>";
+		};
+		F12D5D6B2B911EF300968BFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F13FFE7F2B9504FD00C8337B /* Components */,
+				F13FFE7C2B95030100C8337B /* Extensions */,
+				F12D5D6C2B911F1C00968BFE /* Constants */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		F12D5D6C2B911F1C00968BFE /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F12D5D6D2B911F2F00968BFE /* Lotties.swift */,
+				F12D5D6F2B911FF000968BFE /* Texts.swift */,
+				F13FFE7A2B95011F00C8337B /* SFSymbols.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F12D5D712B91220900968BFE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F12D5D572B9108EB00968BFE /* LoginVC.swift */,
+				F12D5D722B91221F00968BFE /* LoginFieldsView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F13FFE7C2B95030100C8337B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F13FFE7F2B9504FD00C8337B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F13FFE832B9509AD00C8337B /* Buttons */,
+				F13FFE822B9509A700C8337B /* Images */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F13FFE822B9509A700C8337B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F13FFE802B95051D00C8337B /* LeftIconView.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		F13FFE832B9509AD00C8337B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F13FFE842B9509B800C8337B /* ChatifyButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		F1E80E7A2B91039C00EB8675 = {
@@ -72,10 +165,10 @@
 		F1E80E852B91039C00EB8675 /* Chatify */ = {
 			isa = PBXGroup;
 			children = (
+				F12D5D662B911EA700968BFE /* Supports */,
+				F12D5D652B911E8A00968BFE /* Lotties */,
 				F12D5D552B9108D400968BFE /* Feature */,
-				F1E80E862B91039C00EB8675 /* AppDelegate.swift */,
-				F1E80E8F2B91039D00EB8675 /* Assets.xcassets */,
-				F1E80E942B91039D00EB8675 /* Info.plist */,
+				F12D5D6B2B911EF300968BFE /* Products */,
 			);
 			path = Chatify;
 			sourceTree = "<group>";
@@ -148,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E80E902B91039D00EB8675 /* Assets.xcassets in Resources */,
+				F12D5D642B911D2900968BFE /* login.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,7 +253,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E80E872B91039C00EB8675 /* AppDelegate.swift in Sources */,
+				F12D5D6E2B911F2F00968BFE /* Lotties.swift in Sources */,
+				F13FFE852B9509B800C8337B /* ChatifyButton.swift in Sources */,
+				F13FFE7B2B95011F00C8337B /* SFSymbols.swift in Sources */,
+				F12D5D732B91221F00968BFE /* LoginFieldsView.swift in Sources */,
+				F12D5D702B911FF000968BFE /* Texts.swift in Sources */,
 				F12D5D582B9108EB00968BFE /* LoginVC.swift in Sources */,
+				F13FFE812B95051D00C8337B /* LeftIconView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
