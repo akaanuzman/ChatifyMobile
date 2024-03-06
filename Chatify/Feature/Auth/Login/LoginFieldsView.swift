@@ -54,6 +54,9 @@ extension LoginFieldsView {
         emailTextField.textContentType = .emailAddress
         emailTextField.leftView = emailLeftIconView
         emailTextField.leftViewMode = .always
+        emailTextField.keyboardType = .emailAddress
+        emailTextField.returnKeyType = .next
+        emailTextField.delegate = self
 
         dividerView.translatesAutoresizingMaskIntoConstraints = false
         dividerView.backgroundColor = .secondarySystemFill
@@ -66,6 +69,8 @@ extension LoginFieldsView {
         passwordTextField.leftViewMode = .always
         passwordTextField.rightView = passwordRightIconView
         passwordTextField.rightViewMode = .always
+        passwordTextField.returnKeyType = .done
+        passwordTextField.delegate = self
     }
 
     private func layout() {
@@ -89,5 +94,23 @@ extension LoginFieldsView {
     @objc private func didTapShowPassword() {
         passwordTextField.isSecureTextEntry.toggle()
         passwordRightIconView.setImage(passwordTextField.isSecureTextEntry ? SFSymbols.eyeSlash : SFSymbols.eye, for: .normal)
+    }
+}
+
+extension LoginFieldsView: UITextFieldDelegate {
+    private var nextTextField: UITextField? {
+        if emailTextField.isFirstResponder {
+            return passwordTextField
+        }
+        return nil
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let nextField = nextTextField {
+            nextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        return true
     }
 }

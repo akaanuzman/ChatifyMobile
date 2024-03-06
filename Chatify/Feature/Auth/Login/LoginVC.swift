@@ -25,6 +25,7 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
         style()
         layout()
+        createDismissKeyboardTapGesture()
     }
 }
 
@@ -55,7 +56,8 @@ extension LoginVC {
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().offset(0.2)
             make.width.equalToSuperview().multipliedBy(0.7)
-            make.height.equalToSuperview().multipliedBy(0.4)
+            make.height.equalToSuperview().dividedBy(3)
+//            make.height.equalToSuperview().multipliedBy(0.4)
         }
 
         titleLabel.snp.makeConstraints { make in
@@ -80,6 +82,11 @@ extension LoginVC {
             make.leading.equalTo(24)
             make.trailing.equalTo(-24)
         }
+    }
+
+    private func createDismissKeyboardTapGesture() {
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        view.addGestureRecognizer(tap)
     }
 }
 
