@@ -42,6 +42,8 @@ extension LoginVC {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.text = Texts.Login.title.rawValue
         titleLabel.font = .preferredFont(forTextStyle: .extraLargeTitle2)
+
+        signUpButton.addTarget(self, action: #selector(signUpButtonTapped), for: .touchUpInside)
     }
 
     /// This method is used for layouting the view and subviews
@@ -57,7 +59,6 @@ extension LoginVC {
             make.top.equalToSuperview().offset(0.2)
             make.width.equalToSuperview().multipliedBy(0.7)
             make.height.equalToSuperview().dividedBy(3)
-//            make.height.equalToSuperview().multipliedBy(0.4)
         }
 
         titleLabel.snp.makeConstraints { make in
@@ -87,6 +88,11 @@ extension LoginVC {
     private func createDismissKeyboardTapGesture() {
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         view.addGestureRecognizer(tap)
+    }
+
+    @objc private func signUpButtonTapped() {
+        let registerVC = RegisterVC()
+        navigationController?.pushViewController(registerVC, animated: true)
     }
 }
 

@@ -18,6 +18,9 @@
 		F13FFE7B2B95011F00C8337B /* SFSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FFE7A2B95011F00C8337B /* SFSymbols.swift */; };
 		F13FFE812B95051D00C8337B /* LeftIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FFE802B95051D00C8337B /* LeftIconView.swift */; };
 		F13FFE852B9509B800C8337B /* ChatifyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13FFE842B9509B800C8337B /* ChatifyButton.swift */; };
+		F1CEB4662B99C8A500278354 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CEB4652B99C8A500278354 /* RegisterVC.swift */; };
+		F1CEB4682B99CC3400278354 /* register.json in Resources */ = {isa = PBXBuildFile; fileRef = F1CEB4672B99CC3400278354 /* register.json */; };
+		F1CEB46C2B99D2D100278354 /* RegisterFieldsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CEB46B2B99D2D100278354 /* RegisterFieldsView.swift */; };
 		F1E80E872B91039C00EB8675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E80E862B91039C00EB8675 /* AppDelegate.swift */; };
 		F1E80E902B91039D00EB8675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1E80E8F2B91039D00EB8675 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -31,6 +34,9 @@
 		F13FFE7A2B95011F00C8337B /* SFSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbols.swift; sourceTree = "<group>"; };
 		F13FFE802B95051D00C8337B /* LeftIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftIconView.swift; sourceTree = "<group>"; };
 		F13FFE842B9509B800C8337B /* ChatifyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatifyButton.swift; sourceTree = "<group>"; };
+		F1CEB4652B99C8A500278354 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		F1CEB4672B99CC3400278354 /* register.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = register.json; sourceTree = "<group>"; };
+		F1CEB46B2B99D2D100278354 /* RegisterFieldsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFieldsView.swift; sourceTree = "<group>"; };
 		F1E80E832B91039C00EB8675 /* Chatify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E80E862B91039C00EB8675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E80E8F2B91039D00EB8675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +68,7 @@
 		F12D5D562B9108D800968BFE /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				F1CEB4642B99C89A00278354 /* Register */,
 				F12D5D712B91220900968BFE /* Login */,
 			);
 			path = Auth;
@@ -70,6 +77,7 @@
 		F12D5D652B911E8A00968BFE /* Lotties */ = {
 			isa = PBXGroup;
 			children = (
+				F1CEB4672B99CC3400278354 /* register.json */,
 				F12D5D632B911D2900968BFE /* login.json */,
 			);
 			name = Lotties;
@@ -144,6 +152,15 @@
 				F13FFE842B9509B800C8337B /* ChatifyButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F1CEB4642B99C89A00278354 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F1CEB4652B99C8A500278354 /* RegisterVC.swift */,
+				F1CEB46B2B99D2D100278354 /* RegisterFieldsView.swift */,
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 		F1E80E7A2B91039C00EB8675 = {
@@ -241,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1E80E902B91039D00EB8675 /* Assets.xcassets in Resources */,
+				F1CEB4682B99CC3400278354 /* register.json in Resources */,
 				F12D5D642B911D2900968BFE /* login.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +276,8 @@
 				F13FFE7B2B95011F00C8337B /* SFSymbols.swift in Sources */,
 				F12D5D732B91221F00968BFE /* LoginFieldsView.swift in Sources */,
 				F12D5D702B911FF000968BFE /* Texts.swift in Sources */,
+				F1CEB46C2B99D2D100278354 /* RegisterFieldsView.swift in Sources */,
+				F1CEB4662B99C8A500278354 /* RegisterVC.swift in Sources */,
 				F12D5D582B9108EB00968BFE /* LoginVC.swift in Sources */,
 				F13FFE812B95051D00C8337B /* LeftIconView.swift in Sources */,
 			);

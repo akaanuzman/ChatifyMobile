@@ -15,6 +15,7 @@ struct Texts {
     enum Fields: String {
         case emailPlaceholder = "Your email"
         case passwordPlaceholder = "Your password"
+        case confirmPasswordPlaceholder = "Confirm your password"
     }
     
     enum Buttons: String {

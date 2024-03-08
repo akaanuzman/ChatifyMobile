@@ -8,4 +8,6 @@
 enum Lotties: String {
     // Login Page animation
     case login
+    // Register Page animation
+    case register
 }
